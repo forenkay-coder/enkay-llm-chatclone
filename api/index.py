@@ -1,14 +1,7 @@
-from fastapi import FastAPI
+"""Vercel serverless entrypoint for Python.
 
-app = FastAPI()
+This file exposes the FastAPI app for Vercel's Python runtime by
+importing the ASGI handler from the backend.
+"""
 
-@app.get("/api/ping")
-async def ping():
-    return {"ok": True}
-
-@app.post("/api/chat")
-async def chat():
-    return {"response": "Service is initializing. Please try again shortly."}
-
-# Ensure Vercel can find the handler
-handler = app
+from backend.main import handler as app

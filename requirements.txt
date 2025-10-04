@@ -7,5 +7,5 @@ aiofiles==23.2.1
 PyPDF2==3.0.1
 requests==2.31.0
 beautifulsoup4==4.12.2
-pydantic==2.4.2
+pydantic>=2.6,<3
 httpx==0.25.2

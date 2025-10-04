@@ -13,7 +13,7 @@ from backend.chat_service import ChatService
 from backend.file_service import FileService
 from backend.research_agent import ResearchAgent
 
-app = FastAPI(title="Enkay LLM ChatClone", version="1.0.0")
+app = FastAPI(title="Enkay chat clone", version="1.0.0")
 
 # CORS middleware
 app.add_middleware(
@@ -50,9 +50,9 @@ async def read_root():
             """
             <!doctype html>
             <html>
-            <head><title>Enkay LLM ChatClone</title></head>
+            <head><title>Enkay chat clone</title></head>
             <body>
-              <h1>Enkay LLM ChatClone</h1>
+              <h1>Enkay chat clone</h1>
               <p>Frontend static route is configured. If you see this, the static file may not be accessible in the serverless runtime. Navigate to <a href="/">home</a> or use the API endpoints.</p>
             </body>
             </html>

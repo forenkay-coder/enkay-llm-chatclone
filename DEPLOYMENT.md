@@ -1,6 +1,6 @@
-# Deploying Enkay LLM ChatClone to Vercel
+# Deploying Enkay LLM ChatClone (enkay-llm-chatclone) to Vercel
 
-This guide will walk you through deploying your Enkay LLM ChatClone with Google Gemini integration to Vercel.
+This guide walks through deploying the enkay-llm-chatclone app with Google Gemini integration to Vercel.
 
 ## Prerequisites
 
@@ -83,6 +83,10 @@ The project has been configured for Vercel deployment with:
       "use": "@vercel/python"
     },
     {
+      "src": "api/index.py",
+      "use": "@vercel/python"
+    },
+    {
       "src": "frontend/static/**",
       "use": "@vercel/static"
     }
@@ -94,7 +98,7 @@ The project has been configured for Vercel deployment with:
     },
     {
       "src": "/api/(.*)",
-      "dest": "/backend/main.py"
+      "dest": "/api/index.py"
     },
     {
       "src": "/(.*)",

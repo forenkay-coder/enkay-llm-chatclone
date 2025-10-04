@@ -16,8 +16,8 @@ A modern, feature-rich Enkay LLM ChatClone built with FastAPI and Google Gemini 
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/enkay_llm_chatclone.git
-   cd enkay_llm_chatclone
+   git clone https://github.com/forenkay-coder/enkay-llm-chatclone.git
+   cd enkay-llm-chatclone
    ```
 
 2. **Create a virtual environment**
@@ -81,18 +81,17 @@ A modern, feature-rich Enkay LLM ChatClone built with FastAPI and Google Gemini 
 ## Project Structure
 
 ```
-chatgpt-clone/
+enkay-llm-chatclone/
 ├── backend/
 │   ├── main.py              # FastAPI application entry point
 │   ├── chat_service.py      # Google Gemini chat service with error handling
 │   ├── file_service.py      # File upload and processing service
 │   └── research_agent.py    # Web research and analysis agent
 ├── frontend/
-│   ├── static/
-│   │   ├── script.js        # Frontend JavaScript logic
-│   │   └── styles.css       # Modern CSS styling
-│   └── templates/
-│       └── index.html       # Main chat interface
+│   ├── index.html           # Main chat interface
+│   └── static/
+│       ├── script.js        # Frontend JavaScript logic
+│       └── styles.css       # Modern CSS styling
 ├── requirements.txt         # Python dependencies
 ├── .env.example            # Environment variables template
 └── README.md               # This file
